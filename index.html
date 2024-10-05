@@ -8,15 +8,37 @@
         /* Global styles */
         body {
             font-family: 'Arial', sans-serif;
-            background-color:#d4ecec;
+            background-color: #d4ecec;
             color: #333;
             margin: 0;
             padding: 0;
             text-align: center;
         }
 
-        h1 {
+        
+        .slide-in-text {
+            font-size: 2rem;
+            color: #fff;
             background-color: #df3737;
+            padding: 20px;
+            margin: 0;
+            animation: slide-in 2s forwards;
+            position: relative;
+            overflow: hidden;
+        }
+
+        
+        @keyframes slide-in {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        h1 {
+            background-color: #196e0e;
             color: white;
             padding: 20px;
             margin: 0;
@@ -26,8 +48,8 @@
             margin: 50px auto;
             width: 80%;
             max-width: 1000px;
-            background:#e7f33a;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            background: #e7f33a;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             border-radius: 70px;
             padding: 90px;
         }
@@ -58,11 +80,7 @@
         button:active {
             transform: scale(0.95);
         }
-        .h2{
-            color:tomato
-        }
 
-        /* Stylish alert and modal */
         .modal {
             display: none;
             position: fixed;
@@ -99,6 +117,12 @@
     </style>
 </head>
 <body>
+
+    
+    <div class="slide-in-text">
+        SHABANA CODES PRESENTS: AN ENTERPRISE RESOURCE MANAGEMENT SYSTEM IN JAVA
+    </div>
+
     <h1>Welcome to the ERP System!</h1>
 
     <div class="container">
